@@ -1,27 +1,18 @@
 def check(round):
     if round == 0:
-        while True:
-            value = input("Please enter the student's midterm exam mark (0-100):")
-            try:
-                value = float(value)
-                if 100 >= value >= 0:
-                    return value
-                else:
-                    print("Please enter a valid exam mark (0-100)")
-            except:
-                print("Please enter a valid exam mark (0-100)")
+        term = "midterm"
     elif round == 1:
-        while True:
-            value = input("Please enter the student's final exam mark (0-100):")
-            try:
-                value = float(value)
-                if 100 >= value >= 0:
-                    return value
-                else:
-                    print("Please enter a valid exam mark (0-100)")
-            except:
+        term = "final"
+    while True:
+        value = input("Please enter the student's %s exam mark (0-100):"%term)
+        try:
+            value = float(value)
+            if 100 >= value >= 0:
+                return value
+            else:
                 print("Please enter a valid exam mark (0-100)")
-
+        except:
+            print("Please enter a valid exam mark (0-100)")
 
 score = 0
 name = input("Please enter a student name: ")
