@@ -1,4 +1,4 @@
-number = int(input("Enter anumber to find the factorial:"))
+number = int(input("Enter a number to find the factorial:"))
 summary = 1
 
 for i in range(number):
