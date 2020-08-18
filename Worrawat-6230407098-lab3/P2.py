@@ -9,4 +9,4 @@ while guess >= 0:
     print("Incorrect! You have %d guesses left" %guess)
     guess -= 1
 if guess == -1:
-  print("Thanks for trying, but the secret word is actually kku")
+  print("Thanks for trying, but the secret word is actually", answer)
