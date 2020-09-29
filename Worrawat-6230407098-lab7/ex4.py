@@ -5,6 +5,10 @@ class Number:
 
     def add(self):
         return self.x + self.y
+    
+    def display(self):
+        print(self.x)
+        print(self.y)
 
     @classmethod
     def display_factors(cls, number):
