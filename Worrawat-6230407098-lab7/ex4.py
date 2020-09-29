@@ -12,12 +12,9 @@ class Number:
 
     @classmethod
     def display_factors(cls, number):
-        if number % 2 == 0:
-            divided = number / 2
-            return f"Factors of {number} is {float(divided)} and {float(divided)}"
-        else:
-            divided = int(number / 2)
-            return f"Factors of {number} is {float(divided)} and {float(divided + 1)}"
+        divided1 = number // 2
+        divided2 = number - divided1
+        return f"Factors of {number} is {float(divided1)} and {float(divided2)}"
 
     @staticmethod
     def is_valid_divisor(number):
@@ -33,3 +30,4 @@ if __name__ == '__main__':
     print(Number.display_factors(8))
     print(Number.is_valid_divisor(2))
     print(Number.is_valid_divisor(0))
+
